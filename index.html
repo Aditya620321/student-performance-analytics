@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e213d">
+  <meta name="description" content="Student performance and attendance analytics portfolio. A static HTML and CSS dashboard built from an Excel institute project.">
+  <title>Student Analytics | HTML &amp; CSS Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-wrap" id="top">
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Student Analytics home"><span class="brand-mark">SA</span><span>Student<span class="brand-em">Analytics</span><small>EXCEL PORTFOLIO</small></span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#overview">Overview</a>
+          <a href="#performance">Performance</a>
+          <a href="#records">Records</a>
+          <a href="#methodology">Methodology</a>
+        </nav>
+        <a class="header-link" href="Student_Performance_Analytics_Portfolio.xlsx" download>Excel workbook <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="status-dot"></span> INSTITUTE PROJECT  /  ANALYTICS PORTFOLIO</div>
+          <h1 id="hero-title">Student Performance<br><span>&amp; Attendance Report</span></h1>
+          <p>Explore academic results, attendance patterns, subject performance, and house-wise comparisons across 10 anonymized student records.</p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#overview">Explore dashboard <span aria-hidden="true">→</span></a>
+            <a class="secondary-link" href="Student_Performance_Analytics_Portfolio.xlsx" download>Download Excel file <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-decoration" aria-hidden="true"><span class="hero-ring ring-one"></span><span class="hero-ring ring-two"></span><span class="hero-ring ring-three"></span><div class="hero-number">10<span>students analyzed</span></div></div>
+      </section>
+
+      <div class="content">
+        <section id="overview" aria-labelledby="overview-title">
+          <div class="section-heading"><div><span class="section-eyebrow">01 / THE BIG PICTURE</span><h2 id="overview-title">Performance at a glance</h2><p>Key summary metrics calculated from the Excel project data.</p></div><span class="static-tag"><span class="tag-dot"></span> Static data snapshot</span></div>
+          <div class="metrics">
+            <article class="metric-card"><div class="metric-icon icon-blue">▦</div><span class="metric-label">Total students</span><div class="metric-number">10<span class="metric-suffix">records</span></div><p>All student profiles included</p></article>
+            <article class="metric-card"><div class="metric-icon icon-teal">↗</div><span class="metric-label">Average score</span><div class="metric-number">76.12<span class="metric-suffix">%</span></div><p>Mean percentage across students</p></article>
+            <article class="metric-card"><div class="metric-icon icon-gold">◷</div><span class="metric-label">Average attendance</span><div class="metric-number">87.8<span class="metric-suffix"> / 100</span></div><p>Based on supplied attendance values</p></article>
+            <article class="metric-card"><div class="metric-icon icon-purple">★</div><span class="metric-label">Highest score</span><div class="metric-number">94.0<span class="metric-suffix">%</span></div><p>Achieved by Student 04</p></article>
+          </div>
+          <div class="insight-strip"><span class="insight-symbol" aria-hidden="true">✦</span><p><strong>Key observation:</strong> Yellow Tigers has the highest average score at <strong>92.9%</strong>, while <strong>Computer</strong> has the highest subject average at <strong>79.2/100</strong>.</p></div>
+        </section>
+
+        <section id="performance" aria-labelledby="performance-title">
+          <div class="section-heading space-top"><div><span class="section-eyebrow">02 / PERFORMANCE BREAKDOWN</span><h2 id="performance-title">Academic performance</h2><p>Visual comparisons using CSS-based bars—no JavaScript or chart libraries.</p></div></div>
+          <div class="dashboard-grid">
+            <article class="panel panel-large"><div class="panel-head"><div><h3>Student-wise score</h3><p>Percentage of total marks (out of 400)</p></div><span class="panel-chip">10 students</span></div><div class="bar-chart student-chart"><div class="chart-row"><span class="chart-label">Student 04</span><div class="bar-track" role="img" aria-label="Student 04: 94.00 percent"><span class="bar-fill" style="width:94.0%"></span></div><strong class="chart-value">94.0%</strong></div>
+<div class="chart-row"><span class="chart-label">Student 08</span><div class="bar-track" role="img" aria-label="Student 08: 91.75 percent"><span class="bar-fill" style="width:91.75%"></span></div><strong class="chart-value">91.8%</strong></div>
+<div class="chart-row"><span class="chart-label">Student 01</span><div class="bar-track" role="img" aria-label="Student 01: 90.00 percent"><span class="bar-fill" style="width:90.0%"></span></div><strong class="chart-value">90.0%</strong></div>
+<div class="chart-row"><span class="chart-label">Student 06</span><div class="bar-track" role="img" aria-label="Student 06: 83.25 percent"><span class="bar-fill" style="width:83.25%"></span></div><strong class="chart-value">83.2%</strong></div>
+<div class="chart-row"><span class="chart-label">Student 10</span><div class="bar-track" role="img" aria-label="Student 10: 81.00 percent"><span class="bar-fill" style="width:81.0%"></span></div><strong class="chart-value">81.0%</strong></div>
+<div class="chart-row"><span class="chart-label">Student 02</span><div class="bar-track" role="img" aria-label="Student 02: 78.75 percent"><span class="bar-fill" style="width:78.75%"></span></div><strong class="chart-value">78.8%</strong></div>
+<div class="chart-row"><span class="chart-label">Student 07</span><div class="bar-track" role="img" aria-label="Student 07: 68.75 percent"><span class="bar-fill" style="width:68.75%"></span></div><strong class="chart-value">68.8%</strong></div>
+<div class="chart-row"><span class="chart-label">Student 03</span><div class="bar-track" role="img" aria-label="Student 03: 63.75 percent"><span class="bar-fill" style="width:63.75%"></span></div><strong class="chart-value">63.8%</strong></div>
+<div class="chart-row"><span class="chart-label">Student 09</span><div class="bar-track" role="img" aria-label="Student 09: 58.75 percent"><span class="bar-fill" style="width:58.75%"></span></div><strong class="chart-value">58.8%</strong></div>
+<div class="chart-row"><span class="chart-label">Student 05</span><div class="bar-track" role="img" aria-label="Student 05: 51.25 percent"><span class="bar-fill" style="width:51.25%"></span></div><strong class="chart-value">51.2%</strong></div></div><p class="chart-footnote">Students sorted by percentage, highest to lowest.</p></article>
+            <article class="panel"><div class="panel-head"><div><h3>Subject averages</h3><p>Average marks out of 100</p></div></div><div class="bar-chart subject-chart"><div class="chart-row"><span class="chart-label">Mathematics</span><div class="bar-track" role="img" aria-label="Mathematics average: 73.8 out of 100"><span class="bar-fill subject-fill" style="width:73.80%"></span></div><strong class="chart-value">73.8</strong></div>
+<div class="chart-row"><span class="chart-label">Science</span><div class="bar-track" role="img" aria-label="Science average: 76.4 out of 100"><span class="bar-fill subject-fill" style="width:76.40%"></span></div><strong class="chart-value">76.4</strong></div>
+<div class="chart-row"><span class="chart-label">English</span><div class="bar-track" role="img" aria-label="English average: 75.1 out of 100"><span class="bar-fill subject-fill" style="width:75.10%"></span></div><strong class="chart-value">75.1</strong></div>
+<div class="chart-row"><span class="chart-label">Computer</span><div class="bar-track" role="img" aria-label="Computer average: 79.2 out of 100"><span class="bar-fill subject-fill" style="width:79.20%"></span></div><strong class="chart-value">79.2</strong></div></div><div class="subtle-note"><span aria-hidden="true">●</span> Computer has the highest average score.</div></article>
+            <article class="panel"><div class="panel-head"><div><h3>House performance</h3><p>Average student percentage by house</p></div></div><div class="house-chart"><div class="house-row"><div class="house-head"><span>Yellow Tigers</span><strong>92.9%</strong></div><div class="bar-track house-track" role="img" aria-label="Yellow Tigers average: 92.9 percent"><span class="bar-fill house-fill" style="width:92.88%"></span></div><small>2 students</small></div>
+<div class="house-row"><div class="house-head"><span>Blue Eagles</span><strong>81.0%</strong></div><div class="bar-track house-track" role="img" aria-label="Blue Eagles average: 81.0 percent"><span class="bar-fill house-fill" style="width:81.00%"></span></div><small>3 students</small></div>
+<div class="house-row"><div class="house-head"><span>Red Dragons</span><strong>66.7%</strong></div><div class="bar-track house-track" role="img" aria-label="Red Dragons average: 66.7 percent"><span class="bar-fill house-fill" style="width:66.67%"></span></div><small>3 students</small></div>
+<div class="house-row"><div class="house-head"><span>Green Panthers</span><strong>66.2%</strong></div><div class="bar-track house-track" role="img" aria-label="Green Panthers average: 66.2 percent"><span class="bar-fill house-fill" style="width:66.25%"></span></div><small>2 students</small></div></div></article>
+            <article class="panel grade-panel"><div class="panel-head"><div><h3>Grade distribution</h3><p>Based on the institute's grading rules</p></div></div><div class="donut-layout"><div class="donut" role="img" aria-label="50% Excellent, 10% Good, 40% Average"><div class="donut-inner"><strong>10</strong><span>students</span></div></div><div class="legend"><div><span class="legend-dot dot-excellent"></span><span>Excellent</span><strong>5 <small>(50%)</small></strong></div><div><span class="legend-dot dot-good"></span><span>Good</span><strong>1 <small>(10%)</small></strong></div><div><span class="legend-dot dot-average"></span><span>Average</span><strong>4 <small>(40%)</small></strong></div><div><span class="legend-dot dot-low"></span><span>Needs improvement</span><strong>0 <small>(0%)</small></strong></div></div></div></article>
+          </div>
+        </section>
+
+        <section id="records" aria-labelledby="records-title">
+          <div class="section-heading space-top"><div><span class="section-eyebrow">03 / UNDERLYING DATA</span><h2 id="records-title">Student records</h2><p>All 10 anonymized entries. The table scrolls horizontally on small screens.</p></div><span class="static-tag">10 rows</span></div>
+          <div class="panel records-panel"><div class="table-scroll"><table><caption class="sr-only">Student record data with attendance, grades, and marks</caption><thead><tr><th>Student ID</th><th>Name</th><th>House</th><th>Enrollment date</th><th class="right">Attendance</th><th class="right">Total marks</th><th class="right">Percentage</th><th>Grade</th></tr></thead><tbody><tr><td class="mono">S101</td><td class="student-name">Student 01</td><td>Red Dragons</td><td>Sun, 01 Jun 2025</td><td class="right">94</td><td class="right">360 / 400</td><td class="right"><strong>90.00%</strong></td><td><span class="grade excellent">Excellent</span></td></tr>
+<tr><td class="mono">S102</td><td class="student-name">Student 02</td><td>Blue Eagles</td><td>Thu, 05 Jun 2025</td><td class="right">88</td><td class="right">315 / 400</td><td class="right"><strong>78.75%</strong></td><td><span class="grade good">Good</span></td></tr>
+<tr><td class="mono">S103</td><td class="student-name">Student 03</td><td>Green Panthers</td><td>Tue, 10 Jun 2025</td><td class="right">82</td><td class="right">255 / 400</td><td class="right"><strong>63.75%</strong></td><td><span class="grade average">Average</span></td></tr>
+<tr><td class="mono">S104</td><td class="student-name">Student 04</td><td>Yellow Tigers</td><td>Thu, 12 Jun 2025</td><td class="right">96</td><td class="right">376 / 400</td><td class="right"><strong>94.00%</strong></td><td><span class="grade excellent">Excellent</span></td></tr>
+<tr><td class="mono">S105</td><td class="student-name">Student 05</td><td>Red Dragons</td><td>Sun, 15 Jun 2025</td><td class="right">75</td><td class="right">205 / 400</td><td class="right"><strong>51.25%</strong></td><td><span class="grade average">Average</span></td></tr>
+<tr><td class="mono">S106</td><td class="student-name">Student 06</td><td>Blue Eagles</td><td>Fri, 20 Jun 2025</td><td class="right">91</td><td class="right">333 / 400</td><td class="right"><strong>83.25%</strong></td><td><span class="grade excellent">Excellent</span></td></tr>
+<tr><td class="mono">S107</td><td class="student-name">Student 07</td><td>Green Panthers</td><td>Sun, 22 Jun 2025</td><td class="right">85</td><td class="right">275 / 400</td><td class="right"><strong>68.75%</strong></td><td><span class="grade average">Average</span></td></tr>
+<tr><td class="mono">S108</td><td class="student-name">Student 08</td><td>Yellow Tigers</td><td>Wed, 25 Jun 2025</td><td class="right">98</td><td class="right">367 / 400</td><td class="right"><strong>91.75%</strong></td><td><span class="grade excellent">Excellent</span></td></tr>
+<tr><td class="mono">S109</td><td class="student-name">Student 09</td><td>Red Dragons</td><td>Tue, 01 Jul 2025</td><td class="right">79</td><td class="right">235 / 400</td><td class="right"><strong>58.75%</strong></td><td><span class="grade average">Average</span></td></tr>
+<tr><td class="mono">S110</td><td class="student-name">Student 10</td><td>Blue Eagles</td><td>Sat, 05 Jul 2025</td><td class="right">90</td><td class="right">324 / 400</td><td class="right"><strong>81.00%</strong></td><td><span class="grade excellent">Excellent</span></td></tr></tbody></table></div></div>
+        </section>
+
+        <section id="methodology" class="methodology" aria-labelledby="methodology-title">
+          <div class="section-heading space-top"><div><span class="section-eyebrow">04 / ABOUT THE ANALYSIS</span><h2 id="methodology-title">Methodology &amp; notes</h2><p>What was calculated and how to interpret the numbers.</p></div></div>
+          <div class="method-grid">
+            <details open><summary>How are scores calculated?</summary><p>Total marks = Math + Science + English + Computer. A student's percentage equals <strong>(Total marks ÷ 400) × 100</strong>. Subject averages are the mean marks across all 10 students.</p></details>
+            <details><summary>How are the grade categories assigned?</summary><p>Excellent: 80% or above. Good: 70–below 80%. Average: 50–below 70%. Needs Improvement: below 50%, consistent with the Excel project grading logic.</p></details>
+            <details><summary>Is this dashboard interactive?</summary><p>Navigation links and expandable notes work with HTML alone. The charts, KPIs, and records are <strong>static</strong> and won't change when the Excel workbook is edited. JavaScript is not used anywhere on this page.</p></details>
+            <details><summary>Where does the data come from?</summary><p>These are 10 anonymized sample student records from an institute Excel assignment. Attendance is a supplied 0–100 metric, not independently verified calendar-based attendance. The original calculations and formulas can be explored in the downloadable Excel workbook.</p></details>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><div><strong>StudentAnalytics</strong><p>Excel data analysis mini-project · Portfolio showcase</p></div><div><span>Built with HTML &amp; CSS only</span><a href="#top">Back to top ↑</a></div></div></footer>
+  </div>
+</body>
+</html>
